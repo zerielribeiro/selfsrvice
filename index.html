@@ -40,7 +40,7 @@
                 
             </section>
 
-            <section class="summary">
+            <section class="summary" v-if="total()>0">
                 <strong>Resumo do pedido</strong>
                 <table>
                     <thead>
@@ -60,7 +60,7 @@
                         
                         <tr>
                             <th>Total</th>
-                            <th>5.99</th>
+                            <th>{{ total() }}</th>
                         </tr>
                     </tbody>
                 </table>
